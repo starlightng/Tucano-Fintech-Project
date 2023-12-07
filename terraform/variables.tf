@@ -1,21 +1,21 @@
 variable "cluster_name" {
   type = string
-  default = "my-eks-cluster"
+  default = "my-tf-eks-cluster"
 }
 
 variable "cluster_version" {
   type = number
-  default = 1.25
+  default = 1.26
 }
 
 variable "region" {
   type = string
-  default = "us-west-2"
+  default = "us-east-1"
 }
 
 variable "availability_zones" {
   type = list
-  default = ["us-west-2a", "us-west-2b"]
+  default = ["us-east-1a", "us-east-1b", "us-east-1c"]
 }
 
 
